@@ -1,0 +1,172 @@
+/* 
+    Document   : layout
+    Created on : Jul 15, 2010, 2:34:53 PM
+    Author     : Jared
+    Description:
+        Main css
+*/
+
+root { 
+    display: block;
+}
+body{
+    background:url('images/Blue_Background_big_2048.png') no-repeat #1b2d3c;
+}
+th{
+    text-align: left;
+}
+h2, h3, h4{
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:15px;
+}
+form{
+    margin-bottom:0px;
+    padding-bottom:14px;
+}
+.notice{
+    color:blue;
+}
+.success{
+    color:green;
+}
+.error{
+    color:red;
+}
+.rightFloat{
+    float:right;
+}
+
+#wrapper{
+    width:1000px;
+    margin: 5px auto;
+}
+#header{
+    height:93px;
+    background:url('images/Top_Cap_Logo_1000.png') no-repeat;
+    text-align: center;
+    padding-right:30px;
+    width:1000px;
+    /*margin-left:76px;*/
+}
+#sessionLinks{
+    height:20px;
+    width:226px;
+    text-align:right;
+    padding-right:30px;
+}
+#sessionLinks ul{
+    display:inline;
+}
+#sessionLinks li{
+    display:inline;
+    margin-left:20px;
+}
+#sessionLinks{
+    color:white;
+}
+#sessionLinks a{
+    color:white;
+}
+#sessionLinks{
+    float:right;
+}
+
+
+
+#body{
+    min-height:500px;
+    width:940px;
+    /*margin-left:126px;*/
+    padding-left:30px;
+    padding-right:50px;
+    background:url('images/Main_Body_1000.png') repeat-y;
+    overflow:hidden;
+}
+#punchMod{
+    width:190px;
+    float:left;
+}
+#punchBoard{
+    width:750px;
+    float:left;
+}
+punchTable td{
+    padding-left:3px;
+}
+punchTable{
+    border:0px;
+}
+/*#punchBoardTable th{
+    text-align: center;
+}*/
+.punchTable tr:nth-of-type(odd){
+    background:#d2dae1;
+}
+.punchTable tr:nth-of-type(even){
+    background:#eaeff2;
+}
+.punchTable tr:first-of-type{
+    background:white;
+}
+
+/* (Same as above without the first-of-type white BG) */
+.everythingTable tr:nth-of-type(odd){
+    background:#d2dae1;
+}
+.everythingTable tr:nth-of-type(even){
+    background:#eaeff2;
+}
+
+
+
+
+#footer{
+    height:105px;
+    width:1000px;
+    /*margin-left:126px;*/
+    background:url('images/Bottom_Cap_1000.png') no-repeat;
+    text-align:center;
+}
+
+
+
+/*
+ ***General*****
+*/
+.actionButton{
+    float:right;
+    margin-left:5px;
+}
+
+div#topMenu{
+    width:490px;
+    height:34px;
+    float:right;
+    position:relative;
+    top:-5px;
+}
+
+div#rightOfMenu{
+    float:left;
+    width:70px;
+    height:35px;
+    background:url('images/blue_fade.png') repeat-y;
+}
+
+/*
+****************************Admin Area****************************
+*/
+
+
+div#adminContent{
+    width:990px;
+    float:left;
+}
+
+.AddEditTime{
+    background:#eaeff2 !important;
+}
+.AddEditTime tr{
+    background:#eaeff2 !important;
+}

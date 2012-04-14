@@ -1,0 +1,10 @@
+License
+PhpTimeClock is a collaborative effort between a wide variety of people. We are committed to keeping the source code available for all who want it. The code is built upon Code Igniter. The framework remains under the Code Ignitor license which can be seen here. Some part of it have been modified, and they are marked accordingly. The modified parts have a description of their license at the top of the file.
+
+The code done exclusively by the PhpTimeClock team is licensed for use under the following restrictions:
+
+You may download, use, and modify the code available on this site. However, you may not host it for anyone outside of your organization. For example, if you have a company with a server where you deploy PhpTimeClock, you may not have another distinct organization use your installation of PhpTimeClock, even if you are doing so non-commercially.
+You may redistribute the code, along with your modifications so long as you include a copy of this notice with your distribution. Your distribution must provide full disclosure of the source code (no code-obfuscation tools please).
+We do our best to ensure that the software works as expected, but there is no guarantee, implied or otherwise. We can't be held responsible or liable for any damages, financial or otherwise that come as a result of the use, or the misuse of this software.
+While we encourage you to contribute back into the codebase, we do not require that you do so. However, please keep in mind that the any contributions, if accepted, will be maintained and forward ported to future releases, thereby lightening your workload.
+If you have any questions, feel free to contact us. We want to make sure that everyone is on the same page and that it is a win/win situation all around. If you feel there are any ways that we can improve, please let us know.

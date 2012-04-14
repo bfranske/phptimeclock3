@@ -1,0 +1,96 @@
+**********3.0.3 Release  **********
+11-23
+Fixed an issue preventing editing of the last punch of a user
+Fixed undefined variable message on detail/summary reports where the last day a user has punches, there are no "in" punches
+
+11-22
+Added (basic) CSV and Excel format export of reports
+Added ability to precalculate all punch data on reports
+
+11-16
+Improved look of inline audit viewing on detail report.
+Added audits report.
+Resolved multiple issues with time approval, some were possibly affecting part of detail report.
+
+11-15
+Group "Upline" is shown as a tooltip for groups on detail report, and optionally shown in place of the group.
+Added option to show per group status breakdown per user on detail report.
+
+11-13
+Groups can now be disabled/enabled
+
+11-11
+Hide form buttons on management page now simply say 'Cancel' rather than 'Hide *Form Name*'
+Groups can now be disabled.  Showing hidden groups is same as showing hidden users.
+
+11-6
+Config area now  uses jQuery UI Accordions
+Add before first punch button on detail report is now in correct spot when using camera punches
+Added plethoratic tooltips
+
+11-5
+Changed session library to one that uses native PHP sessions to resolve random logout issues on mobile internet, and sometimes IE and Chrome.
+Added ImageResize library.
+Added ablity to associate punches with camera images (per group), viewable on detail report.
+Mobile dashboard now uses timezone offset.
+Failed login on mobile view now redirects to mobile login rather than main login.
+Mobile logout now redirects to mobile login rather than main dashboard.
+Mobile login now uses dropdown for username.
+Added link on mobile to full punch board.
+Mobile view header is smaller, and phptimeclock is in footer.
+When punching, it status is displayed on success.
+
+11-3
+Fixed an issue where punch status was not being checked for identicality when using buttons for status on punching
+Added mobile view, to use it, go to "index.php/mobile"
+
+**********  3.0.2 Release  **********
+10-30
+Added group summary report.
+Reports - Group scope now displays corrct info
+Inclusivity notice on reports fixed.
+
+10-29
+Running a summary/detail report without selecting any users now redirects to everything page 
+    and shows an error rather than redirecting to home page.
+
+10-28-10
+Fixed a bug in OT calculation when using week start offset
+Summary report user total hours now shows reg + OT (not total + OT)
+
+**********3.0.1 Release  **********
+
+10-23-10
+Added DP hook to check if installation is enabled.
+using the check all box on manage users section no longer effects the sys_admin checkboxes
+Fixed bug in reports that would cause text below last punch status total to be same color as status.
+Fixed issues in detail report with add before first punch not showing up at the right spots, 
+    and the empty td cells showing for edit buttons
+You may no longer disable your own account (preventing issue with all admin accounts getting disabled)
+
+
+10-14-10
+Set a proper error message on user password mismatch on "My Info" page
+Added API support.  Users can be set up with a custom id and PIN, and install with API Key.
+	Currently supports punching remotely.
+Tags under "More Options" on report options now shows tags in a table up to 6 tags wide
+Linux Firefox users punch form input elements should not be to large.
+Added Tab Indexes to login page.
+Reports default date now defaults to beginning of week till current day.
+Aesthetic improvements on the tables on the Everything page.
+Added sitewide (mostly on detail report) printer friendly @media CSS, and per user pagination (option)
+Fixed bug in report user index table not showing all users
+Fixed colorpicker not working due to change in form_text()
+
+10-9-10
+Fixes for backup/restore functionality.  It is now db prefix safe, and works on linux.
+Rewrote about half the backup/restore to use CSV format, for security reasons
+Added trimString() function.
+Added Tab Indexes to pages that it would help.
+Form helper functions no longer have CSS class/type passing, but can be passed via the $extra parameter
+Fixed "Rename Group", group name default had extra " /" appended
+
+10-5-10
+Resolved issue on v3 importer overwriting base_url and useSSL (this was troublesome, they now preserved)
+Updated menu CSS to not have upper margin 1px for submenu (greatly improves usability)
+Added ability to backup/restore database
